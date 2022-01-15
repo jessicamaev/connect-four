@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2C2F33;
+}
+
+section {
+    margin: auto;
+}
+
+h1 {
+    font-family: Poppins;
+    text-transform: uppercase;
+    position: absolute;
+    width: 525px;
+    height: 59px;
+    left: calc(50% - 525px/2 - 4.5px);
+    top: calc(50% - 59px/2 - 421.5px);
+    font-style: normal;
+    font-weight: 800px;
+    font-size: 60px;
+    line-height: 90px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.p1{
+    width: 154px;
+    height: 54px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    /* identical to box height */
+    color: #FF5757;
+}
+
+.score1{
+    width: 154px;
+    height: 54px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.score2{
+    width: 154px;
+    height: 54px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 54px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.p2{
+    width: 154px;
+    height: 54px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    /* identical to box height */
+    color: #FFDE59;
+}
+
+
+.playerContainers {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    top: 100px;
+    left: 25%;
+    right: 25%;
+    
+}
+
+.player1, .player2{
+    flex-direction: row;
+    /* display: flex; */
+}
+
+.game-board{
+    position: absolute;
+    width: 636px;
+    height: 519px;
+    left: calc(50% - 636px/2 - 9px);
+    top: calc(50% - 519px/2 + 38.5px);
+
+    background: #004AAD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+/*button*/
+
+.rematch {
+    position: absolute;
+    width: 283px;
+    height: 75px;
+    left: calc(50% - 283px/2 - 21.5px);
+    top: calc(50% - 75px/2 + 395.5px);
+    background: #C4C4C4;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
