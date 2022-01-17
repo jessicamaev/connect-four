@@ -1,4 +1,4 @@
-# Let's play <i>Connect Four</i>
+# <i>Connect Four</i>
 
 
 ## Wireframe
