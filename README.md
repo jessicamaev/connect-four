@@ -11,7 +11,13 @@
 
 To learn more <a href="https://en.wikipedia.org/wiki/Connect_Four"> <b>Read Here</b></a>
 
-## Pseudocode 
+## Technologies Used
+
+HTML<br>
+CSS<br>
+Javascript<br>
+
+## Getting Started: Pseudocode 
 
 Human Player vs Human Player 
 
@@ -48,6 +54,6 @@ Human Player vs Human Player
 
 5. Create Restart button 
 
-
+## Next Steps: 
 
 

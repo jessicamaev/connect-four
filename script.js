@@ -1,3 +1,19 @@
-console.log('hello')
+//define const 
+//player 1 //player 2
 
-// create element/div that holds each circle 
+//grabbing button elements 
+
+const = document.getElementsBy(" ")
+
+const = document.getElementsBy(" ")
+
+const resetButton = document.getElementsBy(" ")
+
+//add event listeners 
+
+
+//making funcions (Function = ID //  CSS = class)
+
+function resetBtnClick() {
+    resetButton.innerText
+}
