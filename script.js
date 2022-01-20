@@ -26,6 +26,11 @@ for (let i = 0; i < boardColumn.length; i++) {
     });
 }
 
+//add event listener to each cell for change function 
+Array.prototype.forEach.call(boardColumn, (cell) => {
+    cell.addEventListener('click', changeColour);
+    cell.style.backgroundColor = '#737373';
+});
 
 //column index 
 function changeColour(evt) {
@@ -39,9 +44,5 @@ function changeColour(evt) {
     }
 }
 
-//add event listener to each cell for change function 
-Array.prototype.forEach.call(boardColumn, (cell) => {
-    cell.addEventListener('click', changeColour);
-    cell.style.backgroundColor = '#737373';
-});
+
 
