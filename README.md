@@ -7,7 +7,7 @@
 
 ## Objective 
 
-<i>Connect Four</i> is a two-player connection board game, in which players choose a colour (yellow or red) take turns "dropping" a "disc" into a seven column, six-row vertical grid. The pieces fall straight down, occupying the lowest available space within the column.The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's "discs". 
+<i>Connect Four</i> is a two-player connection board game, in which players choose a colour (yellow or red) take turns "dropping" a "disc" into a 5x6 grid. The pieces fall straight down, occupying the lowest available space within the column.The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's "discs". 
 
 To learn more <a href="https://en.wikipedia.org/wiki/Connect_Four"> <b>Read Here</b></a>
 

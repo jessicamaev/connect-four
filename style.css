@@ -8,65 +8,113 @@ body {
     background-color: #2C2F33;
 }
 
+/*title*/
 
-/*button*/
-.game-board {
-    background: #004AAD;
-    display: flex;
-    cursor: pointer;
-    height: 510px;
-    width: 490px; 
-    padding: 5px;
-    /* justify-content: center;
-    align-content: center; */
-    
-}
+h1 {
+width: 525px;
+height: 59px;
 
-.column1{
-    flex-direction: row;
-    width: 20%;
-    padding: 2px;
-}
+font-family: Poppins;
+text-transform: uppercase;
+font-style: normal;
+font-weight: bolder;
+font-size: 60px;
+line-height: 90px;
+text-align: center;
+color: #FFFFFF;
 
-.column2 {
-    flex-direction: row;
-    width: 20%;
-    padding: 2px;
-}
-.column3 {
-    flex-direction: row;
-    width: 20%;
-    padding: 2px;
-}
-.column4 {
-    flex-direction: row;
-    width: 20%;
-    padding: 2px;
-}
-.column5 {
-    flex-direction: row;
-    width: 20%;
-    padding: 2px;
+padding-top:15px;
+
 }
 
+/*players*/
+
+.playerContainers{
+display: flex;
+width: 636px;
+height: 113px;
+left: 393px;
+top: 174px;
+
+font-family: Poppins;
+color: #FFFFFF;
+font-size: 15px;
+
+padding-top:15px;
+
+}
+
+.player1{
+    color:#FF5757;
+}
+
+.player2{
+    color:#FFDE59;
+}
+
+.score1, .score2 {
+    text-align: center;
+}
 
 #redPiece {
-    border: 5px solid #737373;
+    border: 4px solid #737373;
     background-color: #FF5757;
 }
 
 #yellowPiece {
-    border: 5px solid #737373;
+    border: 4px solid #737373;
     background-color: #FFDE59;
+
 }
 
-.boardRow {
+
+/*game board*/
+.game-board {
+    background: #004AAD;
+    display: flex;
+    cursor: pointer;
+    height: 430px;
+    width: 510px; 
+    padding: 5px;
+    /* justify-content: center;
+    align-content: center; */
+    box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.486);
+    
+}
+
+.boardCol {
     /* row Styles here */
-    border: 5px solid #004AAD;
-    background: #737373;
-    height: 81px;
+    border: 4px solid #004AAD;
+    background-color: #737373;
+    height: 80px;
+    width: 80px;
     /*flex-direction: row-reverse (bottom/top logic)*/
     border-radius: 50%;
     text-align: center;
     margin: auto;
+
+    box-shadow: 1px 6px 5px rgba(0, 0, 0, 0.486);
 }
+
+/*button*/
+.rematch {
+    width: 100px;
+    height: 60px;
+    left: calc(50% - 283px/2 - 21.5px);
+    top: calc(50% - 75px/2 + 395.5px);
+
+    background: #C4C4C4;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.486);
+    border-radius: 25px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+
+
+}
+
