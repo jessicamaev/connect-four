@@ -82,7 +82,7 @@ padding-top:15px;
     
 }
 
-.boardCol {
+tr td {
     /* row Styles here */
     border: 4px solid #004AAD;
     background-color: #737373;
@@ -93,7 +93,6 @@ padding-top:15px;
     text-align: center;
     margin: auto;
 
-    box-shadow: 1px 6px 5px rgba(0, 0, 0, 0.486);
 }
 
 /*button*/
@@ -118,3 +117,6 @@ padding-top:15px;
 
 }
 
+.cell:hover {
+    background-color: #edf1f4bd !important;
+}
