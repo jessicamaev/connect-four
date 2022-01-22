@@ -57,7 +57,8 @@ Human Player vs Human Player
 
 1. Update score 
 2. Update Animations: bounce and hover over the entire column 
-3. Use local storage 
+3. Play against an AI/Computer
+4. Use local storage 
 
 ## Play Now
 

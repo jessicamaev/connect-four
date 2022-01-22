@@ -1,17 +1,15 @@
+//variables
 var currentPlayer = 1;
 const redPiece = '#FF5757';
 const yellowPiece = '#FFDE59';
 
-
+//selectors
 const boardRow = document.getElementsByTagName('tr');
 const boardCol = document.getElementsByTagName('td');
 const cells = document.getElementsByClassName('cell');
 const restartBtn = document.querySelector('.rematch');
 
-
-
-
-
+//Log cell coordinates when clicked using a for loop 
 for (i = 0; i < boardCol.length; i++) {
     boardCol[i].addEventListener('click', (evt) => {
         console.log(`${evt.target.parentElement.rowIndex},${evt.target.cellIndex}`)
@@ -19,6 +17,7 @@ for (i = 0; i < boardCol.length; i++) {
 };
 
 
+// Funtion 
 function changePlayer(evt) {
     let column = evt.target.cellIndex;
     let row = [];
@@ -56,11 +55,14 @@ function changePlayer(evt) {
 
 }
 
+//iterate through all the cells using forEach and callback function 
 Array.prototype.forEach.call(boardCol, (cell) => {
     cell.addEventListener('click', changePlayer);
     cell.style.backgroundColor = 'grey';
 });
 
+
+//4 different wins: horizontal, verticle, diagonal, diagonal2 
 function checkWinner(one, two, three, four) {
     return (one === two && one === three && one === four && one !== 'grey' && one !== undefined);
 }
@@ -128,6 +130,7 @@ function diag2Win() {
     }
 }
 
+//tie: board completely filled with red/yellow
 function drawCheck() {
 
     let fullcell = []
@@ -143,7 +146,7 @@ function drawCheck() {
 
 };
 
-
+//restart button
 const refreshPage = () => {
     window.location.reload();
 }
