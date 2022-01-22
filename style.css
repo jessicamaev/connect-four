@@ -8,8 +8,9 @@ body {
     background-color: #2C2F33;
 }
 
-/*title*/
 
+
+/*title*/
 h1 {
 width: 525px;
 height: 59px;
@@ -52,32 +53,14 @@ padding-top:15px;
     color:#FFDE59;
 }
 
-.score1, .score2 {
-    text-align: center;
-}
-
-#redPiece {
-    border: 4px solid #737373;
-    background-color: #FF5757;
-}
-
-#yellowPiece {
-    border: 4px solid #737373;
-    background-color: #FFDE59;
-
-}
-
-
 /*game board*/
 .game-board {
     background: #004AAD;
-    display: flex;
+    /* display: flex; */
     cursor: pointer;
     height: 430px;
     width: 510px; 
     padding: 5px;
-    /* justify-content: center;
-    align-content: center; */
     box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.486);
     
 }
@@ -95,14 +78,20 @@ tr td {
 
 }
 
-/*button*/
+.cell:hover {
+    background-color: #edf1f4ab !important;
+    
+}
+
+
 .rematch {
     width: 100px;
     height: 60px;
-    left: calc(50% - 283px/2 - 21.5px);
-    top: calc(50% - 75px/2 + 395.5px);
+    
+
 
     background: #C4C4C4;
+    text-transform: uppercase;
     border: 1px solid #000000;
     box-sizing: border-box;
     box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.486);
@@ -114,9 +103,17 @@ tr td {
     text-align: center;
     text-transform: uppercase;
 
+    cursor: pointer;
 
 }
 
-.cell:hover {
-    background-color: #edf1f4bd !important;
+.btnRestart {
+    padding-left: 46%;
+    padding-top: 20px;
+
 }
+
+.rematch:hover{
+    background-color: white;
+}
+

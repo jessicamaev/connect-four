@@ -8,29 +8,21 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
-
     <title>Connect Four</title>
 </head>
 
 <body>
-
-
-    <section>
-
-        <h1>Connect Four</h1>
-
-        <div class="playerContainers">
-            <div class="player1">
-                <h2 class="p1">Player 1</h2>
-                <p class="score1"></p>
-            </div>
-
-            <div class="player2">
-                <h2 class="p2">Player 2</h2>
-                <p class="score2"></p>
-            </div>
+    <h1>Connect Four</h1>
+    <div class="playerContainers">
+        <div class="player1">
+            <h2 class="p1">Player 1</h2>
         </div>
-    </section>
+
+        <div class="player2">
+            <h2 class="p2">Player 2</h2>
+        </div>
+    </div>
+
 
     <section class="game-board">
         <table>
@@ -78,9 +70,16 @@
                 <td class="cell"></td>
 
             </tr>
+        </table>
 
     </section>
+
+    <div class="btnRestart">
+        <button class="rematch">
+            <p>reset game</p>
+        </button>
     </div>
+
 
 
 

@@ -9,8 +9,9 @@ const yellowPiece = '#FFDE59';
 
 const boardRow = document.getElementsByTagName('tr');
 const boardCol = document.getElementsByTagName('td');
-
 const cells = document.getElementsByClassName('cell');
+const restartBtn = document.querySelector('.rematch')
+
 
 
 // Log cell coordinates when clicked
@@ -160,7 +161,12 @@ function drawCheck() {
     }
 
 
+};
+
+
+//restart button 
+const refreshPage = () => {
+    window.location.reload();
 }
 
-
-
+restartBtn.addEventListener('click', refreshPage)
