@@ -22,18 +22,17 @@ Javascript<br>
 Human Player vs Human Player 
 
 1. Define required constants 
-   1. Define a colour object with keys of 'null' (when the circle is empty)
-   2. Define players, player 1 and player 2
-   3. Define the possible winning cominations, and containing four indexes of the board that make a winner if they hold the same player value
+   1. Define players, player 1 and player 2
+   2. Define the possible winning cominations, and containing four indexes of the board that make a winner if they hold the same player value
 
 2. Create game board
    1. Create a 5x6 board game 
-      1. set "board" to empty 
+      1. log when cell coordinates are clicked
       2. Animation to hover which column you're in
       3. Add bounce animation in css 
    
 3. Placing pieces on board 
-   1. Use a turn variable to remeber whose turn it is
+   1. Use a turn variable to remeber whose turn it is (changePlayer)
    2. Use local storage* to ensure pieces stay on the board 
    3. Use a winner variable to represent three different possibilities - player that won, lose, or tie
    4. Check for win 
@@ -44,7 +43,7 @@ Human Player vs Human Player
          3. Diagonal up right 
          4. Diagonal up left 
    
-   5. Check for tie
+   5. Check for draw
    
    6. Switch players 
       1. Player 1 alternating with Player 2
@@ -55,5 +54,13 @@ Human Player vs Human Player
 5. Create Restart button 
 
 ## Next Steps: 
+
+1. Update score 
+2. Update Animations: bounce and hover over the entire column 
+3. Use local storage 
+
+## Play Now
+
+Play Connect Four [Here](https://jessicamaev.github.io/connect-four/)
 
 

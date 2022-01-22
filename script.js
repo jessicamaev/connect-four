@@ -5,16 +5,12 @@ let winner;
 const redPiece = '#FF5757';
 const yellowPiece = '#FFDE59';
 
-// Selectors
 
 const boardRow = document.getElementsByTagName('tr');
 const boardCol = document.getElementsByTagName('td');
 const cells = document.getElementsByClassName('cell');
 const restartBtn = document.querySelector('.rematch')
 
-
-
-// Log cell coordinates when clicked
 
 for (i = 0; i < boardCol.length; i++) {
     boardCol[i].addEventListener('click', (evt) => {
@@ -23,10 +19,7 @@ for (i = 0; i < boardCol.length; i++) {
 };
 
 
-// Funtions
-
 function changePlayer(evt) {
-    // Get clicked column index
     let column = evt.target.cellIndex;
     let row = [];
 
@@ -37,16 +30,10 @@ function changePlayer(evt) {
                 row[0].style.backgroundColor = '#FF5757';
                 if (horizWin() || vertWin() || diag1Win() || diag2Win()) {
 
-                    //implement winning logic here, 
-                    //display winner on dom instead of alert 
                     return alert('Player 1 wins');
-                    //implement reset button 
                 } else if (drawCheck()) {
 
                     return alert('DRAW!');
-
-                    //display draw on dom instead of alert 
-                    //implement reset button 
                 } else {
 
                     return currentPlayer = 2;
@@ -54,15 +41,9 @@ function changePlayer(evt) {
             } else {
                 row[0].style.backgroundColor = '#FFDE59';
                 if (horizWin() || vertWin() || diag1Win() || diag2Win()) {
-                    //implement winning logic here, 
-                    //display winner on dom instead of alert 
-                    //implement reset button 
                     return alert('Player 2 wins');
 
                 } else if (drawCheck()) {
-                    //display draw on dom instead of alert 
-                    //implement reset button 
-                    //window.reload 
                     return alert('DRAW!');
                 } else {
 
@@ -77,7 +58,6 @@ function changePlayer(evt) {
 
 Array.prototype.forEach.call(boardCol, (cell) => {
     cell.addEventListener('click', changePlayer);
-    // Set all cells to grey for new game.
     cell.style.backgroundColor = 'grey';
 });
 
@@ -164,7 +144,6 @@ function drawCheck() {
 };
 
 
-//restart button 
 const refreshPage = () => {
     window.location.reload();
 }

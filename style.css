@@ -9,8 +9,6 @@ body {
 }
 
 
-
-/*title*/
 h1 {
 width: 525px;
 height: 59px;
@@ -28,7 +26,6 @@ padding-top:15px;
 
 }
 
-/*players*/
 
 .playerContainers{
 display: flex;
@@ -53,10 +50,8 @@ padding-top:15px;
     color:#FFDE59;
 }
 
-/*game board*/
 .game-board {
     background: #004AAD;
-    /* display: flex; */
     cursor: pointer;
     height: 430px;
     width: 510px; 
@@ -66,12 +61,10 @@ padding-top:15px;
 }
 
 tr td {
-    /* row Styles here */
     border: 4px solid #004AAD;
     background-color: #737373;
     height: 80px;
     width: 80px;
-    /*flex-direction: row-reverse (bottom/top logic)*/
     border-radius: 50%;
     text-align: center;
     margin: auto;
@@ -88,8 +81,6 @@ tr td {
     width: 100px;
     height: 60px;
     
-
-
     background: #C4C4C4;
     text-transform: uppercase;
     border: 1px solid #000000;
