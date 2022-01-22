@@ -1,7 +1,4 @@
 var currentPlayer = 1;
-let winner;
-
-
 const redPiece = '#FF5757';
 const yellowPiece = '#FFDE59';
 
@@ -9,7 +6,10 @@ const yellowPiece = '#FFDE59';
 const boardRow = document.getElementsByTagName('tr');
 const boardCol = document.getElementsByTagName('td');
 const cells = document.getElementsByClassName('cell');
-const restartBtn = document.querySelector('.rematch')
+const restartBtn = document.querySelector('.rematch');
+
+
+
 
 
 for (i = 0; i < boardCol.length; i++) {
@@ -61,14 +61,14 @@ Array.prototype.forEach.call(boardCol, (cell) => {
     cell.style.backgroundColor = 'grey';
 });
 
-function colorMatchCheck(one, two, three, four) {
+function checkWinner(one, two, three, four) {
     return (one === two && one === three && one === four && one !== 'grey' && one !== undefined);
 }
 
 function horizWin() {
     for (let row = 0; row < boardRow.length; row++) {
         for (let col = 0; col < 3; col++) {
-            if (colorMatchCheck(
+            if (checkWinner(
                 boardRow[row].children[col].style.backgroundColor,
                 boardRow[row].children[col + 1].style.backgroundColor,
                 boardRow[row].children[col + 2].style.backgroundColor,
@@ -84,7 +84,7 @@ function horizWin() {
 function vertWin() {
     for (let col = 0; col < 6; col++) {
         for (let row = 0; row < 2; row++) {
-            if (colorMatchCheck(
+            if (checkWinner(
                 boardRow[row].children[col].style.backgroundColor,
                 boardRow[row + 1].children[col].style.backgroundColor,
                 boardRow[row + 2].children[col].style.backgroundColor,
@@ -100,7 +100,7 @@ function vertWin() {
 function diag1Win() {
     for (let col = 0; col < 3; col++) {
         for (let row = 0; row < 2; row++) {
-            if (colorMatchCheck(
+            if (checkWinner(
                 boardRow[row].children[col].style.backgroundColor,
                 boardRow[row + 1].children[col + 1].style.backgroundColor,
                 boardRow[row + 2].children[col + 2].style.backgroundColor,
@@ -116,7 +116,7 @@ function diag1Win() {
 function diag2Win() {
     for (let col = 0; col < 3; col++) {
         for (let row = 4; row > 2; row--) {
-            if (colorMatchCheck(
+            if (checkWinner(
                 boardRow[row].children[col].style.backgroundColor,
                 boardRow[row - 1].children[col + 1].style.backgroundColor,
                 boardRow[row - 2].children[col + 2].style.backgroundColor,
