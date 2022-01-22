@@ -1,4 +1,4 @@
-//variables
+//players (red: player 1) (yellow: player 2)
 var currentPlayer = 1;
 const redPiece = '#FF5757';
 const yellowPiece = '#FFDE59';
